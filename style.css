@@ -15,14 +15,34 @@ html, body {
     color: var(--clr-5);
 }
 
+a {
+    text-decoration: none;
+}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat' ;
     text-align: center;
 }
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 28px;
+}
 
 p {
-    line-height: 1.5em;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.column {
+    width: 60%;
 }
 
 #header-nav{
@@ -46,22 +66,16 @@ p {
 
 li {
     list-style: none;
-    text-decoration: none;
     padding: 0 10px;
 }
 
 .nav-menu a {
     list-style: none;
-    text-decoration: none;
     color: var(--clr-6);
 }
 
 .nav-menu a:hover {
     color: var(--clr-1);
-}
-
-.container {
-    max-width: 1600px;
 }
 
 .banner {
@@ -87,23 +101,99 @@ li {
     border-radius: 1em;
 }
 .banner h1 {
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 .banner p {
 font-size: 25px;
 padding-top: 2em;
 }
 
-#home-about {
+#home-about, #home-services {
     border-bottom: 3px dashed var(--clr-2);
-    padding: 20px 60px;
+    padding-bottom: 5em;
 }
 
 #home-about .icons {
     display: flex;
     justify-content: center;
+    height: 10em;
+    padding-top: 2em;
+    align-items: center;
 }
 
 #home-about .icons img {
-    padding: 40px 50px;
+    padding: 0 50px;
+}
+
+
+#home-about button{
+    background-color: var(--clr-3);
+    margin: auto;
+    padding: 20px 40px;
+    color: var(--clr-6);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -4px var(--clr-4);
+}
+
+#home-about button:hover{
+    background-color: var(--clr-1);
+}
+
+#home-services {
+    padding-top:3em;
+    background-color: color-mix(in srgb, var(--clr-3), transparent 90%);
+
+}
+
+.theme-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theme-nav div {
+    width: 25em;
+    height: 25em;
+    margin: 17px;
+    filter: brightness(0.9);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.theme-nav div:hover {
+    filter: brightness(1.15);
+}
+
+.theme-nav h4 {
+    font-size: 25px;
+    color: var(--clr-5);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#nav-services {
+    background-image: url(assets/img/prelink-udrzba.avif);
+    background-position: right;
+}
+
+#nav-public-spaces {
+    background-image: url(assets/img/park-prelink.jpg);
+}
+
+#nav-design {
+    background-image: url(assets/img/prelink-projekt.jpeg);
+}
+
+#nav-realization {
+    background-image: url(assets/img/prelink-realizacie.jpg);
+}
+
+#footer {
+    height: 300px;
+    background-color: var(--clr-3);
 }
