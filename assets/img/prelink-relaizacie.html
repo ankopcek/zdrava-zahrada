@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class="loading-site no-js">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://blog.seftonmeadows.co.uk/xmlrpc.php" />
+
+	<script type="rocketlazyloadscript">(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>15 Amazing Small Garden Pond Ideas - Sefton Meadows Blog</title>
+<meta name="description" content="Transform your garden into a safe tranquil haven for wildlife, including birds and mammals. Check out our picks for the top 15 small garden pond ideas."/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="15 Amazing Small Garden Pond Ideas - Sefton Meadows Blog" />
+<meta property="og:description" content="Transform your garden into a safe tranquil haven for wildlife, including birds and mammals. Check out our picks for the top 15 small garden pond ideas." />
+<meta property="og:url" content="https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/" />
+<meta property="og:site_name" content="Sefton Meadows Blog" />
+<meta property="article:section" content="In The Garden" />
+<meta property="og:image" content="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg" />
+<meta property="og:image:secure_url" content="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="small garden pond ideas uk" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2023-09-01T08:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="15 Amazing Small Garden Pond Ideas - Sefton Meadows Blog" />
+<meta name="twitter:description" content="Transform your garden into a safe tranquil haven for wildlife, including birds and mammals. Check out our picks for the top 15 small garden pond ideas." />
+<meta name="twitter:image" content="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Ryan Jenkins" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="9 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blog.seftonmeadows.co.uk/#organization","name":"Sefton Meadows","url":"https://blog.seftonmeadows.co.uk","logo":{"@type":"ImageObject","@id":"https://blog.seftonmeadows.co.uk/#logo","url":"https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/03/sefton-meadows-logo.jpg","contentUrl":"https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/03/sefton-meadows-logo.jpg","caption":"Sefton Meadows","inLanguage":"en-US","width":"1000","height":"475"}},{"@type":"WebSite","@id":"https://blog.seftonmeadows.co.uk/#website","url":"https://blog.seftonmeadows.co.uk","name":"Sefton Meadows","publisher":{"@id":"https://blog.seftonmeadows.co.uk/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg","url":"https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg","width":"1200","height":"800","caption":"small garden pond ideas uk","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://blog.seftonmeadows.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/","name":"15 Amazing Small Garden Pond Ideas"}}]},{"@type":["WebPage","FAQPage"],"@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#webpage","url":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/","name":"15 Amazing Small Garden Pond Ideas - Sefton Meadows Blog","datePublished":"2023-09-01T08:00:00+00:00","dateModified":"2023-09-01T08:00:00+00:00","isPartOf":{"@id":"https://blog.seftonmeadows.co.uk/#website"},"primaryImageOfPage":{"@id":"https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg"},"inLanguage":"en-US","breadcrumb":{"@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#breadcrumb"},"mainEntity":[{"@type":"Question","url":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#faq-question-1693405006420","name":"What are the most popular types of garden ponds?","acceptedAnswer":{"@type":"Answer","text":"The most popular types of garden ponds include:<br><a href=\"https://russellwatergardens.com/pages/koi-ponds\">Koi ponds</a><br>Wildlife ponds<br>Water gardens<br>Natural ponds<br>Formal ponds"}},{"@type":"Question","url":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#faq-question-1693405016587","name":"How big should my garden pond be?","acceptedAnswer":{"@type":"Answer","text":"The size of your garden pond depends on its purpose and the available space. For a small wildlife pond, a few square metres will suffice. For koi ponds, a larger and deeper area is required, often at least 1000 gallons in volume."}},{"@type":"Question","url":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#faq-question-1693405026962","name":"What's the best location for a garden pond?","acceptedAnswer":{"@type":"Answer","text":"Choose a location that receives at least 4-6 hours of sunlight daily. Avoid areas with overhanging trees to minimise leaf debris. Ensure the site is level and away from underground utilities."}},{"@type":"Question","url":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#faq-question-1693405051758","name":"How often should I clean my garden pond?","acceptedAnswer":{"@type":"Answer","text":"A thorough cleaning is typically needed once a year, usually in the spring. Regular maintenance, such as removing debris and checking water quality, should be done more frequently."}},{"@type":"Question","url":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#faq-question-1693405059984","name":"How do I control algae in my pond?","acceptedAnswer":{"@type":"Answer","text":"Algae can be controlled by:<br>Introducing aquatic plants that compete with algae for nutrients.<br>Using beneficial bacteria products.<br>Installing an ultraviolet (UV) clarifier.<br>Avoiding overfeeding fish."}}]},{"@type":"Person","@id":"https://blog.seftonmeadows.co.uk/author/ryan/","name":"Ryan Jenkins","url":"https://blog.seftonmeadows.co.uk/author/ryan/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/5228d535969bf098c4d0ffffaa5318dd?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/5228d535969bf098c4d0ffffaa5318dd?s=96&amp;d=mm&amp;r=g","caption":"Ryan Jenkins","inLanguage":"en-US"},"sameAs":["https://blog.seftonmeadows.co.uk/"],"worksFor":{"@id":"https://blog.seftonmeadows.co.uk/#organization"}},{"@type":"BlogPosting","headline":"15 Amazing Small Garden Pond Ideas - Sefton Meadows Blog","keywords":"garden pond ideas","datePublished":"2023-09-01T08:00:00+00:00","dateModified":"2023-09-01T08:00:00+00:00","author":{"@id":"https://blog.seftonmeadows.co.uk/author/ryan/","name":"Ryan Jenkins"},"publisher":{"@id":"https://blog.seftonmeadows.co.uk/#organization"},"description":"Transform your garden into a safe tranquil haven for wildlife, including birds and mammals. Check out our picks for the top 15 small garden pond ideas.","name":"15 Amazing Small Garden Pond Ideas - Sefton Meadows Blog","@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#richSnippet","isPartOf":{"@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#webpage"},"image":{"@id":"https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="amphtml" href="https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/amp/" /><meta name="generator" content="AMP for WP 1.1.2"/>
+<link rel='prefetch' href='https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/js/flatsome.js?ver=8e60d746741250b4dd4e' />
+<link rel='prefetch' href='https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/js/chunk.slider.js?ver=3.19.5' />
+<link rel='prefetch' href='https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/js/chunk.popups.js?ver=3.19.5' />
+<link rel='prefetch' href='https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/js/chunk.tooltips.js?ver=3.19.5' />
+<link rel="alternate" type="application/rss+xml" title="Sefton Meadows Blog &raquo; Feed" href="https://blog.seftonmeadows.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sefton Meadows Blog &raquo; Comments Feed" href="https://blog.seftonmeadows.co.uk/comments/feed/" />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link data-minify="1" rel='stylesheet' id='contact-form-7-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=1725292549' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='ub-extension-style-css-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/ultimate-blocks/src/extensions/style.css?ver=1725292549' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='yarpp-thumbnails-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/yet-another-related-posts-plugin/style/styles_thumbnails.css?ver=1725292549' type='text/css' media='all' />
+<style id='yarpp-thumbnails-inline-css' type='text/css'>
+.yarpp-thumbnails-horizontal .yarpp-thumbnail {width: 310px;height: 219px;margin: 5px;margin-left: 0px;}.yarpp-thumbnail > img, .yarpp-thumbnail-default {width: 300px;height: 169px;margin: 5px;}.yarpp-thumbnails-horizontal .yarpp-thumbnail-title {margin: 7px;margin-top: 0px;width: 300px;}.yarpp-thumbnail-default > img {min-height: 169px;min-width: 300px;}
+</style>
+<link rel='stylesheet' id='eb-block-style-6375-css' href='https://blog.seftonmeadows.co.uk/wp-content/uploads/eb-style/eb-style-6375.min.css?ver=78ee3c893c' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='flatsome-main-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/themes/flatsome/assets/css/flatsome.css?ver=1725292549' type='text/css' media='all' />
+<style id='flatsome-main-inline-css' type='text/css'>
+@font-face {
+				font-family: "fl-icons";
+				font-display: block;
+				src: url(https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot?v=3.19.5);
+				src:
+					url(https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.19.5) format("embedded-opentype"),
+					url(https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2?v=3.19.5) format("woff2"),
+					url(https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf?v=3.19.5) format("truetype"),
+					url(https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff?v=3.19.5) format("woff"),
+					url(https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.19.5#fl-icons) format("svg");
+			}
+</style>
+<link rel='stylesheet' id='flatsome-style-css' href='https://blog.seftonmeadows.co.uk/wp-content/themes/flatsome-child/style.css?ver=3.0' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://blog.seftonmeadows.co.uk/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://blog.seftonmeadows.co.uk/wp-json/wp/v2/posts/6375" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.seftonmeadows.co.uk/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<link rel='shortlink' href='https://blog.seftonmeadows.co.uk/?p=6375' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://blog.seftonmeadows.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.seftonmeadows.co.uk%2Fin-the-garden%2Fgarden-pond-ideas%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://blog.seftonmeadows.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.seftonmeadows.co.uk%2Fin-the-garden%2Fgarden-pond-ideas%2F&#038;format=xml" />
+
+	<style></style>
+
+	<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:0 20px 20px 20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:18px; line-height:25px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:18px;height:18px;}</style><link rel="icon" href="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/favicon-300x300.png" sizes="192x192" />
+<meta name="msapplication-TileImage" content="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/favicon-300x300.png" />
+<style id="custom-css" type="text/css">:root {--primary-color: #80c36e;--fs-color-primary: #80c36e;--fs-color-secondary: #ffffff;--fs-color-success: #7a9c59;--fs-color-alert: #b20000;--fs-experimental-link-color: #80c36e;--fs-experimental-link-color-hover: #111;}.tooltipster-base {--tooltip-color: #fff;--tooltip-bg-color: #000;}.off-canvas-right .mfp-content, .off-canvas-left .mfp-content {--drawer-width: 300px;}.container-width, .full-width .ubermenu-nav, .container, .row{max-width: 1250px}.row.row-collapse{max-width: 1220px}.row.row-small{max-width: 1242.5px}.row.row-large{max-width: 1280px}.sticky-add-to-cart--active, #wrapper,#main,#main.dark{background-color: #f9f9f9}.flatsome-cookies {background-color: #80c36e}.header-main{height: 98px}#logo img{max-height: 98px}#logo{width:200px;}#logo img{padding:5px 0;}.header-bottom{min-height: 10px}.header-top{min-height: 20px}.transparent .header-main{height: 44px}.transparent #logo img{max-height: 44px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 124px;}.header.show-on-scroll,.stuck .header-main{height:47px!important}.stuck #logo img{max-height: 47px!important}.search-form{ width: 58%;}.header-bg-color {background-color: #ffffff}.header-bottom {background-color: #80c36e}.header-wrapper:not(.stuck) .header-main .header-nav{margin-top: -1px }.stuck .header-main .nav > li > a{line-height: 51px }.header-bottom-nav > li > a{line-height: 50px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.header-top{background-color:#80c36e!important;}body{font-size: 100%;}body{font-family: "Source Sans Pro", sans-serif;}body {font-weight: 400;font-style: normal;}.nav > li > a {font-family: BenchNine, sans-serif;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-family: BenchNine, sans-serif;}.nav > li > a,.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-weight: 700;font-style: normal;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Roboto Condensed", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2 {font-weight: 400;font-style: normal;}.alt-font{font-family: "Dancing Script", sans-serif;}.alt-font {font-weight: 400!important;font-style: normal!important;}.header:not(.transparent) .header-nav-main.nav > li > a {color: #0a0a0a;}.footer-1{background-color: #80c36e}.footer-2{background-color: #80c36e}.nav-vertical-fly-out > li + li {border-top-width: 1px; border-top-style: solid;}/* Custom CSS */a.button.primary.is-bevel.flatsome-cookies__accept-btn {background: white;color: #80c36e;}.dark .nav>li>a:hover, .dark .nav>li.active>a, .dark .nav>li>a.active .nav-dark .nav>li.current>a, .nav-dark .nav>li>a:hover, .nav-dark .nav>li.active>a, .nav-dropdown.dark>li>a:hover, .nav-dropdown.dark .nav-column>li>a:hover, .nav-dark a.plain:hover, .nav-dark .nav>li>a.active {color: #80c36e;background: white;}.widget.flatsome_recent_posts span.post_comments {display: none;}.yarpp-thumbnails-horizontal {box-sizing: border-box;font-size: 0;}.yarpp-thumbnails-horizontal .yarpp-thumbnail{width:25%;font-size:1rem;height:initial;margin:0px;padding:5px;border:none;}img.attachment-yarpp-thumbnail.size-yarpp-thumbnail.wp-post-image {width: 100%;height: initial;margin: 0;margin-bottom: 5px;}.yarpp-related .yarpp-thumbnails-horizontal .yarpp-thumbnail-title {width: 100%;font-size: 1rem;margin: 0;padding: 5px;text-align: center;height: initial;max-height: initial;}a.yarpp-thumbnail:hover img {opacity: 0.6;}.yarpp-related h3 {font-size: 170%;margin-bottom: 10px;text-align: center;}.yarpp-related {margin: 2em 0;}@media screen and (max-width: 849px){.yarpp-thumbnails-horizontal .yarpp-thumbnail{width:50%;}}.wpcf7-form.sent:before, .wpcf7-form.sent p{display:none;}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style><style id="kirki-inline-styles">/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBD5XxxKA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBK5XxxKA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBC5XxxKA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBN5XxxKA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBB5XxxKA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBA5XxxKA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/roboto-condensed/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyosBO5Xw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* latin-ext */
+@font-face {
+  font-family: 'BenchNine';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/benchnine/ahcev8612zF4jxrwMosT6-xhjGy9m0s.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'BenchNine';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/benchnine/ahcev8612zF4jxrwMosT6-xhgmy9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/dancing-script/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Rep8ltA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/dancing-script/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp8ltA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://blog.seftonmeadows.co.uk/wp-content/fonts/dancing-script/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style></head>
+
+<body class="post-template-default single single-post postid-6375 single-format-standard full-width lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border mobile-submenu-slide mobile-submenu-slide-levels-2">
+
+
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+<div id="wrapper">
+
+	
+	<header id="header" class="header has-sticky sticky-fade">
+		<div class="header-wrapper">
+			<div id="top-bar" class="header-top hide-for-sticky nav-dark">
+    <div class="flex-row container">
+      <div class="flex-col hide-for-medium flex-left">
+          <ul class="nav nav-left medium-nav-center nav-small  nav-divided">
+                        </ul>
+      </div>
+
+      <div class="flex-col hide-for-medium flex-center">
+          <ul class="nav nav-center nav-small  nav-divided">
+                        </ul>
+      </div>
+
+      <div class="flex-col hide-for-medium flex-right">
+         <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
+              <li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons" ><a href="https://www.facebook.com/seftonmeadows/" target="_blank" data-label="Facebook" class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook" rel="noopener nofollow" ><i class="icon-facebook" ></i></a><a href="https://www.instagram.com/seftonmeadowsgardencentre/" target="_blank" data-label="Instagram" class="icon plain instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram" rel="noopener nofollow" ><i class="icon-instagram" ></i></a><a href="https://twitter.com/seftonmeadowsgc?lang=en" data-label="Twitter" target="_blank" class="icon plain twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter" rel="noopener nofollow" ><i class="icon-twitter" ></i></a><a href="mailto:info@seftonmeadows.co.uk" data-label="E-mail" target="_blank" class="icon plain email tooltip" title="Send us an email" aria-label="Send us an email" rel="nofollow noopener" ><i class="icon-envelop" ></i></a><a href="tel:0151 531 6688" data-label="Phone" target="_blank" class="icon plain phone tooltip" title="Call us" aria-label="Call us" rel="nofollow noopener" ><i class="icon-phone" ></i></a></div></li>
+          </ul>
+      </div>
+
+            <div class="flex-col show-for-medium flex-grow">
+          <ul class="nav nav-center nav-small mobile-nav  nav-divided">
+                        </ul>
+      </div>
+      
+    </div>
+</div>
+<div id="masthead" class="header-main hide-for-sticky">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            
+<!-- Header logo -->
+<a href="https://blog.seftonmeadows.co.uk/" title="Sefton Meadows Blog - Just another WordPress site" rel="home">
+		<img width="120" height="57" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/sefton-header-logo.jpg" class="header_logo header-logo" alt="Sefton Meadows Blog"/><img  width="120" height="57" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/sefton-header-logo.jpg" class="header-logo-dark" alt="Sefton Meadows Blog"/></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+                          </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-size-medium nav-spacing-large nav-uppercase nav-prompts-overlay" >
+                          </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-size-medium nav-spacing-large nav-uppercase nav-prompts-overlay">
+              <li class="header-search header-search-lightbox has-icon">
+	<div class="header-button">		<a href="#search-lightbox" aria-label="Search" data-open="#search-lightbox" data-focus="input.search-field"
+		class="icon primary button round is-small">
+		<i class="icon-search" style="font-size:16px;" ></i></a>
+		</div>
+	
+	<div id="search-lightbox" class="mfp-hide dark text-center">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-large"><form method="get" class="searchform" action="https://blog.seftonmeadows.co.uk/" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search..." />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>
+            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="right" data-bg="main-menu-overlay" data-color="" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>
+            </ul>
+          </div>
+
+      </div>
+
+      </div>
+<div id="wide-nav" class="header-bottom wide-nav nav-dark flex-has-center hide-for-medium">
+    <div class="flex-row container">
+
+            
+                        <div class="flex-col hide-for-medium flex-center">
+                <ul class="nav header-nav header-bottom-nav nav-center  nav-box nav-size-large nav-spacing-small nav-uppercase">
+                    <li id="menu-item-4385" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4385 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/" class="nav-top-link">Home</a></li>
+<li id="menu-item-4386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4386 menu-item-design-default"><a href="https://seftonmeadows.co.uk" class="nav-top-link">Web Shop</a></li>
+<li id="menu-item-4373" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4373 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/category/hints-and-tips/" class="nav-top-link">Hints and Tips</a></li>
+<li id="menu-item-4374" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4374 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/category/get-the-look/" class="nav-top-link">Get The Look</a></li>
+<li id="menu-item-4375" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4375 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/category/how-to/" class="nav-top-link">How To&#8230;</a></li>
+<li id="menu-item-4376" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4376 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/category/news/" class="nav-top-link">News</a></li>
+<li id="menu-item-4377" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4377 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/category/out-and-about/" class="nav-top-link">Out and About</a></li>
+<li id="menu-item-4372" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4372 menu-item-design-default"><a href="https://blog.seftonmeadows.co.uk/category/competition-corner/" class="nav-top-link">Competition Corner</a></li>
+                </ul>
+            </div>
+            
+            
+            
+    </div>
+</div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	  <div class="page-title blog-featured-title featured-title no-overflow">
+
+  	<div class="page-title-bg fill">
+  		  		<div class="title-bg fill bg-fill bg-top" style="background-image: url('https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/s2feyjaxwys-e1693405261766.jpg');" data-parallax-fade="true" data-parallax="-2" data-parallax-background data-parallax-container=".page-title"></div>
+  		  		<div class="title-overlay fill" style="background-color: rgba(0,0,0,.5)"></div>
+  	</div>
+
+  	<div class="page-title-inner container  flex-row  dark is-large" style="min-height: 300px">
+  	 	<div class="flex-col flex-center text-center">
+  			<h6 class="entry-category is-xsmall"><a href="https://blog.seftonmeadows.co.uk/category/in-the-garden/" rel="category tag">In The Garden</a></h6><h1 class="entry-title">15 Amazing Small Garden Pond Ideas</h1><div class="entry-divider is-divider small"></div>
+	<div class="entry-meta uppercase is-xsmall">
+		<span class="posted-on">Posted on <a href="https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/" rel="bookmark"><time class="entry-date published" datetime="2023-09-01T08:00:00+00:00">September 1, 2023</time><time class="updated" datetime="2023-08-31T09:15:26+00:00">August 31, 2023</time></a></span> <span class="byline">by <span class="meta-author vcard"><a class="url fn n" href="https://blog.seftonmeadows.co.uk/author/ryan/">Ryan Jenkins</a></span></span>	</div>
+  	 	</div>
+  	</div>
+  </div>
+
+	<main id="main" class="">
+
+<div id="content" class="blog-wrapper blog-single page-wrapper">
+	
+<div class="row align-center">
+	<div class="large-10 col">
+	
+	
+
+
+<article id="post-6375" class="post-6375 post type-post status-publish format-standard has-post-thumbnail hentry category-in-the-garden">
+	<div class="article-inner ">
+				<div class="entry-content single-page">
+
+	
+<p>Garden ponds have been a symbol of tranquillity and a haven for wildlife for hundreds of years, stretching as far back to the regency period. Whether you have a sprawling garden or a small backyard, introducing a pond can transform your space into a serene oasis. From the rustic charm of recycled water features to the elegance of contemporary modern designs, there&#8217;s a pond idea for every garden enthusiast. In this article, we have discovered 15 amazing small garden pond ideas that we believe will introduce plenty of vibrancy and style that may be lacking in your garden. Each of these ideas are tailored for gardens of different aesthetics, including minimalism, regency, and contemporary modern.&nbsp;</p>
+
+
+<div class="wp-block-table-of-contents-block-table-of-contents-block"><div class="eb-parent-wrapper eb-parent-eb-toc-cwsoqes "><div class="eb-toc-container eb-toc-cwsoqes  eb-toc-is-not-sticky eb-toc-not-collapsible eb-toc-initially-not-collapsed eb-toc-scrollToTop style-1 list-style-none" data-scroll-top="false" data-scroll-top-icon="fas fa-angle-up" data-collapsible="false" data-sticky-hide-mobile="false" data-sticky="false" data-scroll-target="scroll_to_toc" data-copy-link="false" data-editor-type="" data-hide-desktop="false" data-hide-tab="false" data-hide-mobile="false" data-itemCollapsed="false"><div class="eb-toc-header"><div class="eb-toc-title">Table of Contents</div></div><div class="eb-toc-wrapper " data-headers="[{&quot;level&quot;:2,&quot;content&quot;:&quot;Brainstorming Garden Pond Ideas&quot;,&quot;text&quot;:&quot;Brainstorming Garden Pond Ideas&quot;,&quot;link&quot;:&quot;brainstorming-garden-pond-ideas&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;1. Mini Ponds&quot;,&quot;text&quot;:&quot;1. Mini Ponds&quot;,&quot;link&quot;:&quot;1-mini-ponds&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;2. Regency Ponds and Fountains&quot;,&quot;text&quot;:&quot;2. Regency Ponds and Fountains&quot;,&quot;link&quot;:&quot;2-regency-ponds-and-fountains&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;3. Recycle Rainwater&quot;,&quot;text&quot;:&quot;3. Recycle Rainwater&quot;,&quot;link&quot;:&quot;3-recycle-rainwater&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;4. Raised Pond&quot;,&quot;text&quot;:&quot;4. Raised Pond&quot;,&quot;link&quot;:&quot;4-raised-pond&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;5. Pond Edging \/ Streamlined Plant Designs&quot;,&quot;text&quot;:&quot;5. Pond Edging \/ Streamlined Plant Designs&quot;,&quot;link&quot;:&quot;5-pond-edging-streamlined-plant-designs&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;6. Wildlife Pond&quot;,&quot;text&quot;:&quot;6. Wildlife Pond&quot;,&quot;link&quot;:&quot;6-wildlife-pond&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;7. Add Stepping Stones&quot;,&quot;text&quot;:&quot;7. Add Stepping Stones&quot;,&quot;link&quot;:&quot;7-add-stepping-stones&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;8. DIY Pond&quot;,&quot;text&quot;:&quot;8. DIY Pond&quot;,&quot;link&quot;:&quot;8-diy-pond&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;9. Modern Water Features&quot;,&quot;text&quot;:&quot;9. Modern Water Features&quot;,&quot;link&quot;:&quot;9-modern-water-features&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;10. Lit Up Garden Ponds&quot;,&quot;text&quot;:&quot;10. Lit Up Garden Ponds&quot;,&quot;link&quot;:&quot;10-lit-up-garden-ponds&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;11. Water Bowls&quot;,&quot;text&quot;:&quot;11. Water Bowls&quot;,&quot;link&quot;:&quot;11-water-bowls&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;12. Crazy Designs&quot;,&quot;text&quot;:&quot;12. Crazy Designs&quot;,&quot;link&quot;:&quot;12-crazy-designs&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;13. Rustic Pond Look&quot;,&quot;text&quot;:&quot;13. Rustic Pond Look&quot;,&quot;link&quot;:&quot;13-rustic-pond-look&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;14. Minimalist Pond Ideas&quot;,&quot;text&quot;:&quot;14. Minimalist Pond Ideas&quot;,&quot;link&quot;:&quot;14-minimalist-pond-ideas&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;15. Recycled Water Features&quot;,&quot;text&quot;:&quot;15. Recycled Water Features&quot;,&quot;link&quot;:&quot;15-recycled-water-features&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;How to Make a Your Own Garden Pond&quot;,&quot;text&quot;:&quot;How to Make a Your Own Garden Pond&quot;,&quot;link&quot;:&quot;how-to-make-a-your-own-garden-pond&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;How Deep Should a Garden Pond Be?&quot;,&quot;text&quot;:&quot;How Deep Should a Garden Pond Be?&quot;,&quot;link&quot;:&quot;how-deep-should-a-garden-pond-be&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;Where is the Best Place to Put a Pond in a Garden?&quot;,&quot;text&quot;:&quot;Where is the Best Place to Put a Pond in a Garden?&quot;,&quot;link&quot;:&quot;where-is-the-best-place-to-put-a-pond-in-a-garden&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;How to Build a Mini Pond in Your Garden&quot;,&quot;text&quot;:&quot;How to Build a Mini Pond in Your Garden&quot;,&quot;link&quot;:&quot;how-to-build-a-mini-pond-in-your-garden&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;How to Take Care of Your Small Garden Pond&quot;,&quot;text&quot;:&quot;How to Take Care of Your Small Garden Pond&quot;,&quot;link&quot;:&quot;how-to-take-care-of-your-small-garden-pond&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;What Do You Put in the Bottom of a Garden Pond?&quot;,&quot;text&quot;:&quot;What Do You Put in the Bottom of a Garden Pond?&quot;,&quot;link&quot;:&quot;what-do-you-put-in-the-bottom-of-a-garden-pond&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;Staying Safe Around Your Garden Pond&quot;,&quot;text&quot;:&quot;Staying Safe Around Your Garden Pond&quot;,&quot;link&quot;:&quot;staying-safe-around-your-garden-pond&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;FAQs&quot;,&quot;text&quot;:&quot;FAQs&quot;,&quot;link&quot;:&quot;faqs&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;What are the most popular types of garden ponds?&quot;,&quot;text&quot;:&quot;What are the most popular types of garden ponds?&quot;,&quot;link&quot;:&quot;what-are-the-most-popular-types-of-garden-ponds&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;How big should my garden pond be?&quot;,&quot;text&quot;:&quot;How big should my garden pond be?&quot;,&quot;link&quot;:&quot;how-big-should-my-garden-pond-be&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;What&#039;s the best location for a garden pond?&quot;,&quot;text&quot;:&quot;What&#039;s the best location for a garden pond?&quot;,&quot;link&quot;:&quot;whats-the-best-location-for-a-garden-pond&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;How often should I clean my garden pond?&quot;,&quot;text&quot;:&quot;How often should I clean my garden pond?&quot;,&quot;link&quot;:&quot;how-often-should-i-clean-my-garden-pond&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;How do I control algae in my pond?&quot;,&quot;text&quot;:&quot;How do I control algae in my pond?&quot;,&quot;link&quot;:&quot;how-do-i-control-algae-in-my-pond&quot;},{&quot;level&quot;:2,&quot;content&quot;:&quot;Sources&quot;,&quot;text&quot;:&quot;Sources&quot;,&quot;link&quot;:&quot;sources&quot;}]" data-visible="[true,true,true,true,true,true]" data-delete-headers="[]" data-smooth="true" data-top-offset=""><div class="eb-toc__list-wrap"><ul class='eb-toc__list'><li><a href="#brainstorming-garden-pond-ideas">Brainstorming Garden Pond Ideas</a><ul class='eb-toc__list'><li><a href="#1-mini-ponds">1. Mini Ponds</a><li><a href="#2-regency-ponds-and-fountains">2. Regency Ponds and Fountains</a><li><a href="#3-recycle-rainwater">3. Recycle Rainwater</a><li><a href="#4-raised-pond">4. Raised Pond</a><li><a href="#5-pond-edging-streamlined-plant-designs">5. Pond Edging / Streamlined Plant Designs</a><li><a href="#6-wildlife-pond">6. Wildlife Pond</a><li><a href="#7-add-stepping-stones">7. Add Stepping Stones</a><li><a href="#8-diy-pond">8. DIY Pond</a><li><a href="#9-modern-water-features">9. Modern Water Features</a><li><a href="#10-lit-up-garden-ponds">10. Lit Up Garden Ponds</a><li><a href="#11-water-bowls">11. Water Bowls</a><li><a href="#12-crazy-designs">12. Crazy Designs</a><li><a href="#13-rustic-pond-look">13. Rustic Pond Look</a><li><a href="#14-minimalist-pond-ideas">14. Minimalist Pond Ideas</a><li><a href="#15-recycled-water-features">15. Recycled Water Features</a></li></ul><li><a href="#how-to-make-a-your-own-garden-pond">How to Make a Your Own Garden Pond</a><li><a href="#how-deep-should-a-garden-pond-be">How Deep Should a Garden Pond Be?</a><li><a href="#where-is-the-best-place-to-put-a-pond-in-a-garden">Where is the Best Place to Put a Pond in a Garden?</a><li><a href="#how-to-build-a-mini-pond-in-your-garden">How to Build a Mini Pond in Your Garden</a><li><a href="#how-to-take-care-of-your-small-garden-pond">How to Take Care of Your Small Garden Pond</a><li><a href="#what-do-you-put-in-the-bottom-of-a-garden-pond">What Do You Put in the Bottom of a Garden Pond?</a><li><a href="#staying-safe-around-your-garden-pond">Staying Safe Around Your Garden Pond</a><li><a href="#faqs">FAQs</a><ul class='eb-toc__list'><li><a href="#what-are-the-most-popular-types-of-garden-ponds">What are the most popular types of garden ponds?</a><li><a href="#how-big-should-my-garden-pond-be">How big should my garden pond be?</a><li><a href="#whats-the-best-location-for-a-garden-pond">What&#8217;s the best location for a garden pond?</a><li><a href="#how-often-should-i-clean-my-garden-pond">How often should I clean my garden pond?</a><li><a href="#how-do-i-control-algae-in-my-pond">How do I control algae in my pond?</a></li></ul><li><a href="#sources">Sources</a></ul></div></div></div></div></div>
+
+
+<h2 class="wp-block-heading">Brainstorming Garden Pond Ideas</h2>
+
+
+
+<p>Choosing the right pond for your garden varies, depending on size, shape, style, and other factors. Whether you opt for a grand design or a quaint mini pond, introducing this water feature will undoubtedly elevate your garden&#8217;s appeal. Ponds not only enhance the aesthetic but also provide a sanctuary for various wildlife. </p>
+
+
+
+<p>For this specific article, we will mainly be brainstorming small garden ideas for the UK. Be sure to keep reading to learn more interesting information about small garden ponds ideas, including how to create one, maintaining it, and what fish can be added to UK garden ponds.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">1. Mini Ponds</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/gqiz8qydsa8-1024x717.jpg" alt="mini garden pond idea" class="wp-image-6377" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>Ponds are a delightful addition to any garden, serving as a sanctuary for wildlife, from birds and hedgehogs to insects and bats. Simplify the process by crafting a mini pond using repurposed items like an old container or sink. To set up, position the container at ground level, fill with clean sand, stones, and gravel. Introduce pond plants and create a makeshift ramp for easy access for animals.</p>
+
+
+
+<p class="has-text-align-center">For more info about ideas for your garden, try our <a href="https://blog.seftonmeadows.co.uk/in-the-garden/wildlife-garden-ideas/">wildlife garden ideas</a>.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">2. Regency Ponds and Fountains</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/regency-pond-1.jpg" alt="regency small garden pond " class="wp-image-6378" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>Inspired by the regency era, water features serve as the centrepiece of classic gardens. Beyond their aesthetic appeal, they also offer the therapeutic sound of flowing water, reminiscent of nature&#8217;s symphony. Therefore, they are worthy for large and small garden pond ideas. For other aesthetics, be sure to include one of our many <a href="https://seftonmeadows.co.uk/building-structures-storage/gazebos">gazebos</a> so that you can enjoy your small garden pond comfortably in any weather.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">3. Recycle Rainwater</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-1024x683.jpg" alt="recycle rainwater for small garden pond ideas" class="wp-image-6379" style="width:900px;height:600px" width="900" height="600" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-1024x683.jpg 1024w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-300x200.jpg 300w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-768x512.jpg 768w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-1536x1024.jpg 1536w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-2048x1365.jpg 2048w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/recycle-rainwater-1-254x169.jpg 254w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>Harness the power of nature by allowing rainwater to fill your pond. This eco-friendly approach helps to conserve water whilst also ensuring a chemical-free habitat for wildlife. More UK gardens are integrating this approach to limit costs of water, and if you want to learn more about how to reuse rainwater in your garden, visit our <a href="https://blog.seftonmeadows.co.uk/uk/eco-friendly-garden-ideas/">eco-friendly garden ideas</a> article.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">4. Raised Pond</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/raised-garden-pond-1.jpg" alt="raised small garden pond idea" class="wp-image-6380" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>For those seeking a hassle-free pond solution, raised ponds are the answer. Available in various materials like wood and brick, these ponds are easy to assemble and relocate.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">5. Pond Edging / Streamlined Plant Designs</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/pond-edging-1.jpg" alt="garden pond idea edging" class="wp-image-6381" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>Blend your pond seamlessly with the surrounding garden by introducing marginal plants. These flora thrive on pond edges and shallow areas, helping your water feature appear as if it&#8217;s been a part of your garden for ages. Consider plants like flowering rush or Japanese iris to enhance the pond&#8217;s perimeter. Overhanging plants can also create mesmerising reflections on the water surface.</p>
+
+
+
+<h3 class="wp-block-heading">6. Wildlife Pond</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/kaqmpgdgm0y-1024x768.jpg" alt="wildlife pond idea frog" class="wp-image-6382" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>The depth of your pond plays a crucial role in determining its inhabitants. For a wildlife-centric pond, a shallow depth suffices. Such garden pond ideas like this can attract many creatures, from beetles and bees to frogs and dragonflies. However, if you&#8217;re keen on housing <a href="https://www.allpondsolutions.co.uk/fish/koi-carp/" target="_blank" rel="noopener">Koi</a>, ensure a depth of around 4-5 feet.</p>
+
+
+
+<p class="has-text-align-center">Have a glance at our <a href="https://blog.seftonmeadows.co.uk/in-the-garden/garden-privacy-ideas/">garden privacy ideas</a> to learn how to make your garden more secluded from nosy neighbours.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">7. Add Stepping Stones</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/stepping-stones-garden-pond-1.jpg" alt="stepping stones for small garden pond ideas" class="wp-image-6383" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>Introduce a touch of Zen to your garden with stepping stones across your small garden pond idea. These functional and aesthetic additions invite exploration and create a calming ambiance.</p>
+
+
+
+<h3 class="wp-block-heading">8. DIY Pond</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/DIY-pond-1-1024x768.jpg" alt="DIY build your own garden pond idea" class="wp-image-6384" style="width:900px;height:600px" width="900" height="600"/></figure>
+
+
+
+<p>While garden ponds are a source of endless enjoyment, they require thoughtful consideration. Some potential buyers might view elaborate water features as maintenance-intensive. However, for those who cherish the beauty and serenity ponds offer, the effort is worth it.</p>
+
+
+
+<h3 class="wp-block-heading">9. Modern Water Features</h3>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/pond-water-features-1.jpg" alt="pond water features" class="wp-image-6385" style="width:900px;height:600px" width="900" height="600" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/pond-water-features-1.jpg 800w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/pond-water-features-1-300x200.jpg 300w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/pond-water-features-1-768x512.jpg 768w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/pond-water-features-1-254x169.jpg 254w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>Modern water features, like spherical water bowls, offer a contemporary touch to traditional ponds. They not only enhance the pond&#8217;s aesthetic but also ensure proper oxygenation.</p>
+
+
+
+<p class="has-text-align-center">We have a wide variety of products exclusively available in our <a href="https://seftonmeadows.co.uk/sale">sale</a> offerings.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">10. Lit Up Garden Ponds</h3>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" decoding="async" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/lip-up-garden-pond-1.jpeg" alt="lit up garden pond idea" class="wp-image-6390" style="object-fit:cover;width:900px;height:600px" width="900" height="600" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/lip-up-garden-pond-1.jpeg 900w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/lip-up-garden-pond-1-300x200.jpeg 300w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/lip-up-garden-pond-1-768x512.jpeg 768w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/08/lip-up-garden-pond-1-254x169.jpeg 254w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>Illuminate your pond with garden lighting options like lanterns and LED fountains. These additions ensure your pond remains the focal point even after sunset.</p>
+
+
+
+<h3 class="wp-block-heading">11. Water Bowls</h3>
+
+
+
+<p>Corten steel water bowls are a trendy choice for garden ponds. Their rustic appearance complements green foliage, making them ideal for both spacious and compact gardens.</p>
+
+
+
+<h3 class="wp-block-heading">12. Crazy Designs</h3>
+
+
+
+<p>This idea allows for more creativity from your angle. Unique fountains, for instance, can add a touch of whimsy to your garden while providing the calming sound of flowing water. No matter which design you choose for your small garden pond in the UK, you can pair it up with one of our many <a href="https://blog.seftonmeadows.co.uk/in-the-garden/garden-shade-ideas/">garden shade ideas</a>, so that you can enjoy your garden in the shade.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">13. Rustic Pond Look</h3>
+
+
+
+<p>Rustic ponds exude charm and can be created on a budget. Repurposed items, coupled with fresh water and pebbles, can transform any space into a rustic paradise.</p>
+
+
+
+<h3 class="wp-block-heading">14. Minimalist Pond Ideas</h3>
+
+
+
+<p>Minimalist ponds, characterised by sleek designs and cascading water, are perfect for modern gardens. Their understated elegance and soothing sounds make them a favourite among garden enthusiasts.</p>
+
+
+
+<h3 class="wp-block-heading">15. Recycled Water Features</h3>
+
+
+
+<p>Repurposed urns can serve as intriguing water features for small garden ponds in the UK. Their trickling water not only prevents stagnation but also attracts diverse wildlife.</p>
+
+
+
+<p class="has-text-align-center">Learn <a href="https://blog.seftonmeadows.co.uk/how-to/how-to-help-hedgehogs/">how to help hedgehogs in your garden</a>.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading">How to Make a Your Own Garden Pond</h2>
+
+
+
+<p>Creating a garden pond in the UK requires a few essential items and a systematic approach.&nbsp;</p>
+
+
+
+<ul class="wp-block-list">
+<li>Begin by marking the desired area, dig a hole of approximately 60-80cm depth, and ensure its sides are level.&nbsp;</li>
+
+
+
+<li>Once the hole is prepared, lay a thick layer of builder&#8217;s sand at its base.&nbsp;</li>
+
+
+
+<li>Place a pond liner atop the sand, secure it, and introduce rocks or gravel if desired.&nbsp;</li>
+
+
+
+<li>Fill the pond with rainwater and introduce plants after a week.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">How Deep Should a Garden Pond Be?</h2>
+
+
+
+<p>The depth of a garden pond varies, depending on the purpose. For ornamental ponds, a shallow depth will work perfectly. However, if you wish to house fish, especially Koi, you should measure your garden pond depth to be at least 4ft deep.</p>
+
+
+
+<h2 class="wp-block-heading">Where is the Best Place to Put a Pond in a Garden?</h2>
+
+
+
+<p>The ideal location for a garden pond is a spot that offers a balance of sunlight and shade. This ensures a thriving ecosystem and minimises the risk of excessive algae growth.</p>
+
+
+
+<h2 class="wp-block-heading">How to Build a Mini Pond in Your Garden</h2>
+
+
+
+<p>Creating a mini pond is a straightforward DIY project. Begin by selecting a sturdy container, position it in a suitable location, and seal any drainage holes. Add a layer of clean gravel, fill the pond with rainwater, and introduce your chosen pond plants.</p>
+
+
+
+<p class="has-text-align-center">For further information, get in touch with the <a href="https://www.rspb.org.uk/" target="_blank" rel="noopener">RSPB</a>.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading">How to Take Care of Your Small Garden Pond</h2>
+
+
+
+<p>As the seasons change in the UK, so do the needs of your garden pond. During spring, it&#8217;s essential to remove any fallen leaves and debris that accumulated over winter. This is also the best time to introduce new plants, ensuring they establish well before summer.&nbsp;</p>
+
+
+
+<p>In the hot months, ensure your pond has adequate shade to prevent overheating and excessive algae growth.&nbsp;</p>
+
+
+
+<p>Autumn calls for preparations for the colder months, like installing a pond heater or de-icer to maintain an open area in the pond, allowing gas exchange crucial for fish and pond life.&nbsp;</p>
+
+
+
+<p>Regularly check and maintain water levels, especially during dry spells.</p>
+
+
+
+<h2 class="wp-block-heading">What Do You Put in the Bottom of a Garden Pond?</h2>
+
+
+
+<p>The base of a garden pond can be decorated with gravel, slate, pebbles, or rocks. These materials not only enhance the pond&#8217;s aesthetic but also provide space for plants to anchor their roots.</p>
+
+
+
+<p>For small UK garden ponds, whether grand or quaint, can transform outdoor spaces into a serene environment. From regency-inspired fountains to rustic and modern designs, these water features enhance aesthetics, support wildlife, and offer therapeutic tranquillity. Embracing these small garden pond ideas ensures a garden that&#8217;s both visually captivating and harmoniously connected to nature.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Making a Small Wildlife Pond - Timelapse - 4K" width="1020" height="574" src="https://www.youtube.com/embed/JizkfNC3O_E?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<h2 class="wp-block-heading">Staying Safe Around Your Garden Pond</h2>
+
+
+
+<p>Safety around garden ponds, especially small ones, is important, particularly if you have young children or pets. Consider installing a pond guard or mesh just below the water surface. This not only prevents children and pets from falling in but also provides support for birds and wildlife. Additionally, ensure electrical installations like pumps or lights are safely set up, using a circuit breaker and regularly checking for wear and tear.</p>
+
+
+
+<h2 class="wp-block-heading">FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1693405006420" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>What are the most popular types of garden ponds?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>The most popular types of garden ponds include:<br /><a href="https://russellwatergardens.com/pages/koi-ponds" target="_blank" rel="noopener">Koi ponds</a><br />Wildlife ponds<br />Water gardens<br />Natural ponds<br />Formal ponds</p>
+
+</div>
+</div>
+<div id="faq-question-1693405016587" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>How big should my garden pond be?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>The size of your garden pond depends on its purpose and the available space. For a small wildlife pond, a few square metres will suffice. For koi ponds, a larger and deeper area is required, often at least 1000 gallons in volume.</p>
+
+</div>
+</div>
+<div id="faq-question-1693405026962" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>What&#8217;s the best location for a garden pond?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Choose a location that receives at least 4-6 hours of sunlight daily. Avoid areas with overhanging trees to minimise leaf debris. Ensure the site is level and away from underground utilities.</p>
+
+</div>
+</div>
+<div id="faq-question-1693405051758" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>How often should I clean my garden pond?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>A thorough cleaning is typically needed once a year, usually in the spring. Regular maintenance, such as removing debris and checking water quality, should be done more frequently.</p>
+
+</div>
+</div>
+<div id="faq-question-1693405059984" class="rank-math-list-item">
+<h3 class="rank-math-question "><strong>How do I control algae in my pond?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Algae can be controlled by:<br />Introducing aquatic plants that compete with algae for nutrients.<br />Using beneficial bacteria products.<br />Installing an ultraviolet (UV) clarifier.<br />Avoiding overfeeding fish.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<h2 class="wp-block-heading">Sources</h2>
+
+
+
+<p>RSPB (n.d.) Homepage. [online] Available at: <a href="https://www.rspb.org.uk/" target="_blank" rel="noopener">https://www.rspb.org.uk/</a>&nbsp; [accessed 21/08/23]&nbsp;</p>
+
+
+
+<p>Russell Water Gardens. (n.d.). Koi Ponds. [online] Available at: <a href="https://russellwatergardens.com/pages/koi-ponds" target="_blank" rel="noopener">https://russellwatergardens.com/pages/koi-ponds</a> [accessed 21/08/23]&nbsp;</p>
+
+
+
+<p>All Pond Solutions. (n.d.) Koi Carp. Fish. [online] Available at: <a href="https://www.allpondsolutions.co.uk/fish/koi-carp/" target="_blank" rel="noopener">https://www.allpondsolutions.co.uk/fish/koi-carp/</a> [accessed 21/08/23] </p>
+<div class="saboxplugin-wrap" itemtype="http://schema.org/Person" itemscope itemprop="author"><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img alt='Ryan Jenkins' src='https://secure.gravatar.com/avatar/5228d535969bf098c4d0ffffaa5318dd?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5228d535969bf098c4d0ffffaa5318dd?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' itemprop="image"/></div><div class="saboxplugin-authorname"><a href="https://blog.seftonmeadows.co.uk/author/ryan/" class="vcard author" rel="author"><span class="fn">Ryan Jenkins</span></a></div><div class="saboxplugin-desc"><div itemprop="description"><p>Ryan Jenkins is a professional gardener and has been working in the gardening industry for over 25 years. This has allowed Ryan to accumulate a vast wealth of gardening knowledge which he shares on the Sefton Meadows blog.</p>
+</div></div><div class="clearfix"></div></div></div><div class='yarpp yarpp-related yarpp-related-website yarpp-template-thumbnails'>
+<!-- YARPP Thumbnails -->
+<h3>You may also like to read...</h3>
+<div class="yarpp-thumbnails-horizontal">
+<a class='yarpp-thumbnail' rel='norewrite' href='https://blog.seftonmeadows.co.uk/in-the-garden/wildlife-garden-ideas/' title='Wildlife Garden Ideas: How to Create a Wonderful Garden Habitat'>
+<img width="254" height="169" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/05/wildlife-garden-ideas-254x169.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="wildlife garden ideas" data-pin-nopin="true" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/05/wildlife-garden-ideas-254x169.jpg 254w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/05/wildlife-garden-ideas-300x200.jpg 300w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/05/wildlife-garden-ideas-768x512.jpg 768w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/05/wildlife-garden-ideas.jpg 900w" sizes="(max-width: 254px) 100vw, 254px" /><span class="yarpp-thumbnail-title">Wildlife Garden Ideas: How to Create a Wonderful Garden Habitat</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://blog.seftonmeadows.co.uk/in-the-garden/6-garden-pub-ideas/' title='6 Incredible Garden Pub Ideas'>
+<img width="254" height="169" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/02/garden-pub-cheers-254x169.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="group holding drinks for garden pub ideas" data-pin-nopin="true" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/02/garden-pub-cheers-254x169.jpg 254w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/02/garden-pub-cheers-300x200.jpg 300w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/02/garden-pub-cheers-768x512.jpg 768w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/02/garden-pub-cheers.jpg 900w" sizes="(max-width: 254px) 100vw, 254px" /><span class="yarpp-thumbnail-title">6 Incredible Garden Pub Ideas</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://blog.seftonmeadows.co.uk/competition-corner/amazing-gardens-winners/' title='Competition: Amazing Gardens Winners'>
+<img width="300" height="169" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2017/07/feature-placeholder.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="feature placeholder" data-pin-nopin="true" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2017/07/feature-placeholder.jpg 720w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2017/07/feature-placeholder-300x169.jpg 300w" sizes="(max-width: 300px) 100vw, 300px"><span class="yarpp-thumbnail-title">Competition: Amazing Gardens Winners</span></a>
+<a class='yarpp-thumbnail' rel='norewrite' href='https://blog.seftonmeadows.co.uk/in-the-garden/how-to-get-rid-of-greenfly-and-blackfly/' title='How to Get Rid of Greenfly and Blackfly'>
+<img width="254" height="169" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/04/how-to-get-rid-blackfly-254x169.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="how to get rid of greenfly and blackfly" data-pin-nopin="true" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/04/how-to-get-rid-blackfly-254x169.jpg 254w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/04/how-to-get-rid-blackfly-300x200.jpg 300w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/04/how-to-get-rid-blackfly-768x512.jpg 768w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2023/04/how-to-get-rid-blackfly.jpg 900w" sizes="(max-width: 254px) 100vw, 254px" /><span class="yarpp-thumbnail-title">How to Get Rid of Greenfly and Blackfly</span></a>
+</div>
+</div>
+
+	
+	<div class="blog-share text-center"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative" ><a href="https://www.facebook.com/sharer.php?u=https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon button circle is-outline tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook" rel="noopener nofollow" ><i class="icon-facebook" ></i></a><a href="https://twitter.com/share?url=https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon button circle is-outline tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter" rel="noopener nofollow" ><i class="icon-twitter" ></i></a><a href="mailto:?subject=15%20Amazing%20Small%20Garden%20Pond%20Ideas&body=Check%20this%20out%3A%20https%3A%2F%2Fblog.seftonmeadows.co.uk%2Fin-the-garden%2Fgarden-pond-ideas%2F" class="icon button circle is-outline tooltip email" title="Email to a Friend" aria-label="Email to a Friend" rel="nofollow" ><i class="icon-envelop" ></i></a></div></div></div>
+
+	<footer class="entry-meta text-center">
+		This entry was posted in <a href="https://blog.seftonmeadows.co.uk/category/in-the-garden/" rel="category tag">In The Garden</a>. Bookmark the <a href="https://blog.seftonmeadows.co.uk/in-the-garden/garden-pond-ideas/" title="Permalink to 15 Amazing Small Garden Pond Ideas" rel="bookmark">permalink</a>.	</footer>
+
+
+        <nav role="navigation" id="nav-below" class="navigation-post">
+	<div class="flex-row next-prev-nav bt bb">
+		<div class="flex-col flex-grow nav-prev text-left">
+			    <div class="nav-previous"><a href="https://blog.seftonmeadows.co.uk/how-to/when-to-feed-tomato-plants/" rel="prev"><span class="hide-for-small"><i class="icon-angle-left" ></i></span> When to Feed Tomato Plants and How to Grow Them</a></div>
+		</div>
+		<div class="flex-col flex-grow nav-next text-right">
+			    <div class="nav-next"><a href="https://blog.seftonmeadows.co.uk/in-the-garden/low-maintenance-plants-for-pots/" rel="next">Top 10 Low Maintenance Plants for Pots <span class="hide-for-small"><i class="icon-angle-right" ></i></span></a></div>		</div>
+	</div>
+
+	    </nav>
+
+    	</div>
+</article>
+
+
+
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+	
+</div>
+	</div>
+
+</div>
+
+</div>
+
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+	<div class="row row-collapse row-full-width align-right dark"  id="row-383997581">
+
+
+	<div id="col-361849921" class="col small-12 large-12"  >
+				<div class="col-inner text-left" style="background-color:rgb(128, 195, 110);" >
+			
+			
+
+<div class="row row-collapse align-center"  id="row-1058675046">
+
+
+	<div id="col-1474582353" class="col medium-12 small-12 large-3"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="container section-title-container" style="margin-bottom:0px;"><h3 class="section-title section-title-normal"><b></b><span class="section-title-main" >Contact Us</span><b></b></h3></div>
+
+<div class="contact-info dark">
+<div class="email"><a href="mailto:info@seftonmeadows.co.uk">info@seftonmeadows.co.uk</a></div>
+<div class="telephone"><a href="tel:0151 531 6688">0151 531 6688</a></div>
+<p>Sefton Meadows Garden Centre,<br />
+Sefton Lane,<br />
+Sefton Meadows,<br />
+Maghull,<br />
+L31 8BT.</p>
+</div>
+<a href="https://seftonmeadows.co.uk/garden-centre/directions" class="button white expand"  style="border-radius:10px;">
+		<span>Map &amp; Directions</span>
+	</a>
+
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-160945707" class="col medium-6 small-12 large-6"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="container section-title-container" style="margin-bottom:0px;"><h3 class="section-title section-title-normal"><b></b><span class="section-title-main" >Find Us</span><b></b></h3></div>
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2009143379">
+		<a class="" href="https://seftonmeadows.co.uk/garden-centre/directions" rel="Directions to Sefton Meadows" >						<div class="img-inner dark" >
+			<img width="510" height="240" src="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/sefton-map-1.jpg" class="attachment-large size-large" alt="" decoding="async" loading="lazy" srcset="https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/sefton-map-1.jpg 510w, https://blog.seftonmeadows.co.uk/wp-content/uploads/2021/02/sefton-map-1-300x141.jpg 300w" sizes="(max-width: 510px) 100vw, 510px" />						
+					</div>
+						</a>		
+<style>
+#image_2009143379 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+	<div id="gap-302678235" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-302678235 {
+  padding-top: 10px;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1090627177" class="col medium-6 small-12 large-3"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="container section-title-container" style="margin-bottom:0px;"><h3 class="section-title section-title-normal"><b></b><span class="section-title-main" >Useful Links</span><b></b></h3></div>
+
+<div><a href="https://seftonmeadows.co.uk/privacy-policy-cookie-restriction-mode/">Cookies and Privacy</a></div>
+<div><a href="https://seftonmeadows.co.uk/terms-conditions/">Terms &amp; Conditions</a></div>
+<div><a href="https://seftonmeadows.co.uk/delivery-information/">Delivery &amp; Returns</a></div>
+<div><a href="https://seftonmeadows.co.uk/faqs/">FAQ's</a></div>
+<div><a href="https://seftonmeadows.co.uk/garden-centre/opening-times">Opening Times</a></div>
+<div><a href="https://seftonmeadows.co.uk/contact/">Contact Us</a></div>
+	<div id="gap-340684810" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-340684810 {
+  padding-top: 15px;
+}
+</style>
+	</div>
+	
+
+<div class="social-icons follow-icons full-width text-left" ><a href="https://www.facebook.com/seftonmeadows/" target="_blank" data-label="Facebook" class="icon button circle is-outline facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook" rel="noopener nofollow" ><i class="icon-facebook" ></i></a><a href="https://www.instagram.com/seftonmeadowsgardencentre/" target="_blank" data-label="Instagram" class="icon button circle is-outline instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram" rel="noopener nofollow" ><i class="icon-instagram" ></i></a><a href="https://twitter.com/seftonmeadowsgc?lang=en" data-label="Twitter" target="_blank" class="icon button circle is-outline twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter" rel="noopener nofollow" ><i class="icon-twitter" ></i></a><a href="tel:0151 531 6688" data-label="Phone" target="_blank" class="icon button circle is-outline phone tooltip" title="Call us" aria-label="Call us" rel="nofollow noopener" ><i class="icon-phone" ></i></a></div>
+
+
+		</div>
+					</div>
+
+	
+
+
+<style>
+#row-1058675046 > .col > .col-inner {
+  padding: 0px 10px 0px 10px;
+}
+</style>
+</div>
+
+		</div>
+				
+<style>
+#col-361849921 > .col-inner {
+  padding: 20px 15px 20px 15px;
+}
+</style>
+	</div>
+
+	
+
+
+<style>
+#row-383997581 > .col > .col-inner {
+  padding: 20px 0px 0px 0px;
+  background-color: #7a9c59;
+}
+</style>
+</div>
+<div class="absolute-footer dark medium-text-center small-text-center">
+  <div class="container clearfix">
+
+    
+    <div class="footer-primary pull-left">
+            <div class="copyright-footer">
+        Copyright 2025 © <strong>Sefton Meadows Garden Centre</strong>      </div>
+          </div>
+  </div>
+</div>
+
+<a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline round hide-for-medium" id="top-link" aria-label="Go to top"><i class="icon-angle-up" ></i></a>
+
+</footer>
+
+</div>
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide mobile-sidebar-slide mobile-sidebar-levels-1 mobile-sidebar-levels-2" data-levels="2">
+
+	
+	<div class="sidebar-menu no-scrollbar ">
+
+		
+					<ul class="nav nav-sidebar nav-vertical nav-uppercase nav-slide" data-tab="1">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4385"><a href="https://blog.seftonmeadows.co.uk/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4386"><a href="https://seftonmeadows.co.uk">Web Shop</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4373"><a href="https://blog.seftonmeadows.co.uk/category/hints-and-tips/">Hints and Tips</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4374"><a href="https://blog.seftonmeadows.co.uk/category/get-the-look/">Get The Look</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4375"><a href="https://blog.seftonmeadows.co.uk/category/how-to/">How To&#8230;</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4376"><a href="https://blog.seftonmeadows.co.uk/category/news/">News</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4377"><a href="https://blog.seftonmeadows.co.uk/category/out-and-about/">Out and About</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4372"><a href="https://blog.seftonmeadows.co.uk/category/competition-corner/">Competition Corner</a></li>
+<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form method="get" class="searchform" action="https://blog.seftonmeadows.co.uk/" role="search">
+		<div class="flex-row relative">
+			<div class="flex-col flex-grow">
+	   	   <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Search..." />
+			</div>
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+					<i class="icon-search" ></i>				</button>
+			</div>
+		</div>
+    <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>
+<li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons" ><a href="https://www.facebook.com/seftonmeadows/" target="_blank" data-label="Facebook" class="icon plain facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook" rel="noopener nofollow" ><i class="icon-facebook" ></i></a><a href="https://www.instagram.com/seftonmeadowsgardencentre/" target="_blank" data-label="Instagram" class="icon plain instagram tooltip" title="Follow on Instagram" aria-label="Follow on Instagram" rel="noopener nofollow" ><i class="icon-instagram" ></i></a><a href="https://twitter.com/seftonmeadowsgc?lang=en" data-label="Twitter" target="_blank" class="icon plain twitter tooltip" title="Follow on Twitter" aria-label="Follow on Twitter" rel="noopener nofollow" ><i class="icon-twitter" ></i></a><a href="mailto:info@seftonmeadows.co.uk" data-label="E-mail" target="_blank" class="icon plain email tooltip" title="Send us an email" aria-label="Send us an email" rel="nofollow noopener" ><i class="icon-envelop" ></i></a><a href="tel:0151 531 6688" data-label="Phone" target="_blank" class="icon plain phone tooltip" title="Call us" aria-label="Call us" rel="nofollow noopener" ><i class="icon-phone" ></i></a></div></li>
+			</ul>
+		
+		
+	</div>
+
+	
+</div>
+<div class="ux-body-overlay"></div>	<div class="flatsome-cookies dark">
+		<div class="flatsome-cookies__inner">
+			<div class="flatsome-cookies__text">
+				This site uses cookies to offer you a better browsing experience. By browsing this website, you agree to our use of cookies.			</div>
+			<div class="flatsome-cookies__buttons">
+								<a href="#" class="button primary is-bevel flatsome-cookies__accept-btn"  >
+		<span>Accept</span>
+	</a>
+			</div>
+		</div>
+	</div>
+	<style id='wp-block-paragraph-inline-css' type='text/css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<link rel='stylesheet' id='essential-blocks-animation-css' href='https://blog.seftonmeadows.co.uk/wp-content/plugins/table-of-contents-block/assets/css/animate.min.css?ver=1.4.1' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='fontawesome-frontend-css-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/table-of-contents-block/assets/css/fontawesome/css/all.min.css?ver=1725292557' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='create-block-table-of-content-block-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/table-of-contents-block/dist/style.css?ver=1725292557' type='text/css' media='all' />
+<style id='wp-block-heading-inline-css' type='text/css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+</style>
+<style id='wp-block-image-inline-css' type='text/css'>
+.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;-webkit-backdrop-filter:blur(16px) saturate(180%);backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;transition:opacity .2s ease;width:20px;z-index:100}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both;visibility:visible}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}@media (prefers-reduced-motion:no-preference){.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+</style>
+<style id='wp-block-list-inline-css' type='text/css'>
+ol,ul{box-sizing:border-box}:root :where(ul.has-background,ol.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-embed-inline-css' type='text/css'>
+.wp-block-embed.alignleft,.wp-block-embed.alignright,.wp-block[data-align=left]>[data-type="core/embed"],.wp-block[data-align=right]>[data-type="core/embed"]{max-width:360px;width:100%}.wp-block-embed.alignleft .wp-block-embed__wrapper,.wp-block-embed.alignright .wp-block-embed__wrapper,.wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,.wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper{min-width:280px}.wp-block-cover .wp-block-embed{min-height:240px;min-width:320px}.wp-block-embed{overflow-wrap:break-word}.wp-block-embed :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-embed iframe{max-width:100%}.wp-block-embed__wrapper{position:relative}.wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before{content:"";display:block;padding-top:50%}.wp-embed-responsive .wp-has-aspect-ratio iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before{padding-top:42.85%}.wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before{padding-top:50%}.wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before{padding-top:56.25%}.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before{padding-top:75%}.wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before{padding-top:100%}.wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before{padding-top:177.77%}.wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before{padding-top:200%}
+</style>
+<link data-minify="1" rel='stylesheet' id='yarppRelatedCss-css' href='https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=1725292549' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #80c36e;--wp--preset--color--secondary: #ffffff;--wp--preset--color--success: #7a9c59;--wp--preset--color--alert: #b20000;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-left: auto !important;margin-right: auto !important;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:root :where(body){padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: none;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-success-color{color: var(--wp--preset--color--success) !important;}.has-alert-color{color: var(--wp--preset--color--alert) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-success-background-color{background-color: var(--wp--preset--color--success) !important;}.has-alert-background-color{background-color: var(--wp--preset--color--alert) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-success-border-color{border-color: var(--wp--preset--color--success) !important;}.has-alert-border-color{border-color: var(--wp--preset--color--alert) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=1725292549" id="swv-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/blog.seftonmeadows.co.uk\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1725292549" id="contact-form-7-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=1725292549" id="flatsome-live-search-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script type="text/javascript" id="flatsome-js-js-extra">
+/* <![CDATA[ */
+var flatsomeVars = {"theme":{"version":"3.19.5"},"ajaxurl":"https:\/\/blog.seftonmeadows.co.uk\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"47","stickyHeaderHeight":"0","scrollPaddingTop":"0","assets_url":"https:\/\/blog.seftonmeadows.co.uk\/wp-content\/themes\/flatsome\/assets\/","lightbox":{"close_markup":"<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu","toggleButton":"Toggle"},"options":{"cookie_notice_version":"1","swatches_layout":false,"swatches_disable_deselect":false,"swatches_box_select_event":false,"swatches_box_behavior_selected":false,"swatches_box_update_urls":"1","swatches_box_reset":false,"swatches_box_reset_limited":false,"swatches_box_reset_extent":false,"swatches_box_reset_time":300,"search_result_latency":"0"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/themes/flatsome/assets/js/flatsome.js?ver=1725292549" id="flatsome-js-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-cookie-notice/flatsome-cookie-notice.js?ver=1725292549" id="flatsome-cookie-notice-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LfclY4aAAAAAEvJ-gYsU5xj8xU1Ya_fsAss6BAZ&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpcf7-recaptcha-js-before">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {
+    "sitekey": "6LfclY4aAAAAAEvJ-gYsU5xj8xU1Ya_fsAss6BAZ",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=1725292549" id="wpcf7-recaptcha-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/plugins/pwa-for-wp/assets/js/pwaforwp-video.min.js?ver=1.7.76" id="pwaforwp-video-js-js"></script>
+<script type="text/javascript" id="pwaforwp-download-js-js-extra">
+/* <![CDATA[ */
+var pwaforwp_download_js_obj = {"force_rememberme":"0"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/plugins/pwa-for-wp/assets/js/pwaforwp-download.min.js?ver=1.7.76" id="pwaforwp-download-js-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/table-of-contents-block/dist/frontend/index.js?ver=1725292557" id="essential-blocks-toc-frontend-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/cache/min/1/wp-content/plugins/table-of-contents-block/assets/js/eb-animation-load.js?ver=1725292557" id="essential-blocks-eb-animation-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://blog.seftonmeadows.co.uk/wp-content/plugins/table-of-contents-block/assets/js/clipboard.min.js?ver=1.4.1" id="essential-blocks-clipboard-js"></script>
+
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1739353512 -->

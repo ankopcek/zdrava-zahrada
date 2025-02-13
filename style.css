@@ -1,0 +1,109 @@
+:root {
+    --clr-1: #015249;
+    --clr-2: #57BC90;
+    --clr-3: #77C9D4;
+    --clr-4: #A5A5AF;
+    --clr-5: #333;
+    --clr-6: #f4f6f3;
+
+}
+
+html, body {
+    font-family: 'Archivo';
+    margin: 0;
+    background-color: var(--clr-6);
+    color: var(--clr-5);
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat' ;
+    text-align: center;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+#header-nav{
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-3);
+    border-bottom: 3px dashed var(--clr-6);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 12px;
+}
+
+.nav-menu .logo {
+    padding: 0 30px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.nav-menu a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--clr-6);
+}
+
+.nav-menu a:hover {
+    color: var(--clr-1);
+}
+
+.container {
+    max-width: 1600px;
+}
+
+.banner {
+    height: 670px;
+    background-image: url('assets/img/zahrada-banner.jpg');
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-window {
+    height: 40%;
+    width: 60%;
+    padding: 3em 1.5em;
+    background: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    border-radius: 1em;
+}
+.banner h1 {
+    padding-top: 1em;
+}
+.banner p {
+font-size: 25px;
+padding-top: 2em;
+}
+
+#home-about {
+    border-bottom: 3px dashed var(--clr-2);
+    padding: 20px 60px;
+}
+
+#home-about .icons {
+    display: flex;
+    justify-content: center;
+}
+
+#home-about .icons img {
+    padding: 40px 50px;
+}
