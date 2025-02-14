@@ -41,8 +41,14 @@ p {
     max-width: 1300px;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .column {
     width: 60%;
+    text-align: justify;
 }
 
 #header-nav{
@@ -117,7 +123,7 @@ padding-top: 2em;
     display: flex;
     justify-content: center;
     height: 10em;
-    padding-top: 2em;
+    padding-top: 1em;
     align-items: center;
 }
 
@@ -125,25 +131,50 @@ padding-top: 2em;
     padding: 0 50px;
 }
 
+#home-about .window-left {
+    padding: 40px;
+    background-color: color-mix(in srgb, var(--clr-2), transparent 90%);
+    box-shadow: 0 0 10px -4px var(--clr-4);
+}
+#home-about .window-left h2{
+    font-size: 30px;
+    color: var(--clr-1);
+}
+#home-about .window-left ul{
+    margin: 20px auto;
+}
+
+#home-about .window-left li{
+    line-height: 30px;
+    font-weight: bold;
+    list-style-type: disc;
+    color: var(--clr-1)
+}
 
 #home-about button{
-    background-color: var(--clr-3);
+    background-color: var(--clr-1);
     margin: auto;
-    padding: 20px 40px;
+    padding: 10px 30px;
     color: var(--clr-6);
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 10px -4px var(--clr-4);
+    margin-top: 15px;
+    width: 100%;
 }
 
 #home-about button:hover{
-    background-color: var(--clr-1);
+    background-color: var(--clr-2);
+}
+
+#home-about .column h3{
+    text-align: start;
+    font-size: 25px;
 }
 
 #home-services {
     padding-top:3em;
-    background-color: color-mix(in srgb, var(--clr-3), transparent 90%);
 
 }
 
