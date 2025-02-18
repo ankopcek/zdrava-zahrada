@@ -35,6 +35,10 @@ p {
     letter-spacing: 0.03em;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -78,6 +82,8 @@ li {
 .nav-menu a {
     list-style: none;
     color: var(--clr-6);
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .nav-menu a:hover {
@@ -227,4 +233,27 @@ padding-top: 2em;
 #footer {
     height: 300px;
     background-color: var(--clr-3);
+    color: var(--clr-6);
+    padding: 40px 10px;
 }
+
+#footer h4 {
+    text-align: start;
+}
+ 
+#footer a {
+    display: block;
+    padding: 10px 0;
+    color: var(--clr-6)
+} 
+
+#footer a:hover {
+    color: var(--clr-1);
+} 
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
