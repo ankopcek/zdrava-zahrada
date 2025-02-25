@@ -244,7 +244,8 @@ button:hover{
 #home-gallery {
     margin: 0;
     padding: 40px;
-    background-color: color-mix(in srgb, var(--clr-2), transparent 90%);
+    background: rgb(87,188,144);
+background: radial-gradient(circle, rgba(87,188,144,0.49205619747899154) 0%, rgba(255,255,255,1) 86%);
 }
 
 #home-gallery .container {
