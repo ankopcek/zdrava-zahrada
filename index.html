@@ -48,12 +48,7 @@
 
         <div id="home-about">
             <div class="container">
-                <div class="icons">
-                    <img src="assets/img/krhla-ikona.svg" alt="" width="70" loading="lazy">
-                    <img src="assets/img/rastlina-ikona.svg" alt="" width="50" loading="lazy">
-                    <img src="assets/img/dom-ikona.svg" alt="" width="50" loading="lazy">
-                    <img src="assets/img/zelen-ikona.svg" alt="" width="50" loading="lazy">
-                </div>
+                
                 <div class="flex">
                     <div class="window-left">
                         <h2>Zdravá Zeleň</h2>
@@ -88,7 +83,7 @@
 
         <div id="home-services">
             
-            <h2>Naše služby</h2>
+            <h2>Služby</h2>
             <div class="theme-nav">
                 <a href="">
                     <div id="nav-services">
@@ -114,6 +109,39 @@
        
         </div>
 
+        <div id="home-gallery">
+            <div id="contact-form">
+                <div class="">
+
+                </div>
+                <div class="form-container">
+                    <form action="process_form.php" method="POST">
+                        <div>
+                        <h2>Máte záujem o naše služby? Napíšte nám!</h2>
+                        <label for="name">Meno a priezvisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="company">Spoločnosť:</label>
+                        <input type="text" id="company" name="company">
+            
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="phone">Telefónne číslo:</label>
+                        <input type="tel" id="phone" name="phone" required>
+            
+                        <label for="message">Vaša správa:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <br>
+                        <button type="submit">Odoslať správu</button>
+                    </div>
+                    <img src="realizacia-2.jpg" alt="" width="500">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <footer id="footer">
@@ -136,7 +164,8 @@
                 <h4>Firemné údaje</h4>
                 <p>Zdravá Zeleň s.r.o.</p>
                 <p>Na konci vesmíru 33</p>
-                <p>95501 Topoľčany</p>
+                <p>955 01 Topoľčany</p>
+                <br/>
                 <p>IČO: 12 345 678</p>
                 <p>IČ DPH: SK0000000001</p>
             </div>

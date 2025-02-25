@@ -1,0 +1,24 @@
+<div id="contact-form">
+   
+    <div class="form-container">
+        <form action="process_form.php" method="POST">
+            <h2>Máte záujem o naše služby? Napíšte nám!</h2>
+            <label for="name">Meno a priezvisko:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="company">Spoločnosť:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefónne číslo:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Vaša správa:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Odoslať správu</button>
+        </form>
+    </div>
+</div>
